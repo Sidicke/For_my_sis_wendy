@@ -135,9 +135,8 @@ function startTypingAnimation() {
     "",
     "En ce jour spécial, je veux te souhaiter un merveilleux anniversaire rempli de joie, de rires et de moments inoubliables.",
     "Que cette nouvelle année de vie t'apporte tout le bonheur que tu mérites, des réussites éclatantes et des rêves qui se réalisent.",
-    "",
     "Profite de chaque instant entourée de ceux que tu aimes.",
-    "",
+    "Et crois moi tu es une personne spéciale laisse jamais les autres te dire qui tu es",
     "Joyeux anniversaire ! 🎉🎂💖"
 ].join('\n');
 

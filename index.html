@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Joyeux Anniversaire - Page Interactive 🎉</title>
+
+<link rel="stylesheet" href="index.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+<!-- Bouton de démarrage -->
+<div class="start-button-container" id="startButtonContainer">
+  <button class="start-button" id="startButton">Appuyez pour voir la surprise 🎁</button>
+</div>
+<!-- Fond animé avec dégradé -->
+
+<div class="animated-background"></div>
+
+
+<!-- Ballons flottants en arrière-plan -->
+
+<div class="balloons-container">
+
+<div class="balloon balloon-1"></div>
+
+<div class="balloon balloon-2"></div>
+
+<div class="balloon balloon-3"></div>
+
+<div class="balloon balloon-4"></div>
+
+<div class="balloon balloon-5"></div>
+
+<div class="balloon balloon-6"></div>
+
+<div class="balloon balloon-7"></div>
+
+<div class="balloon balloon-8"></div>
+
+</div>
+
+<!-- Pluie de paillettes -->
+
+<div class="sparkles-container">
+
+<div class="sparkle sparkle-1"></div>
+
+<div class="sparkle sparkle-2"></div>
+
+<div class="sparkle sparkle-3"></div>
+
+<div class="sparkle sparkle-4"></div>
+
+<div class="sparkle sparkle-5"></div>
+
+<div class="sparkle sparkle-6"></div>
+
+<div class="sparkle sparkle-7"></div>
+
+<div class="sparkle sparkle-8"></div>
+
+<div class="sparkle sparkle-9"></div>
+
+<div class="sparkle sparkle-10"></div>
+
+<div class="sparkle sparkle-11"></div>
+
+<div class="sparkle sparkle-12"></div>
+
+<div class="sparkle sparkle-13"></div>
+
+<div class="sparkle sparkle-14"></div>
+
+<div class="sparkle sparkle-15"></div>
+
+<div class="sparkle sparkle-16"></div>
+
+<div class="sparkle sparkle-17"></div>
+
+<div class="sparkle sparkle-18"></div>
+
+<div class="sparkle sparkle-19"></div>
+
+<div class="sparkle sparkle-20"></div>
+
+</div>
+
+<!-- Contenu principal -->
+
+<main class="main-container">
+
+
+<!-- Titre principal -->
+
+<section class="title-section" id="titleSection">
+
+<h1 class="main-title" id="mainTitle">
+
+Joyeux Anniversaire <span class="name-placeholder">Wendy</span>
+
+</h1>
+<!-- Section Photo Anniversaire -->
+<section class="photo-section visible" id="photoSection">
+
+    <div class="photo-frame">
+        <img src="images/Wendy.jpg" alt="Photo Anniversaire" class="birthday-photo">
+    </div>
+</section>
+<div class="cake-emoji">🎂</div>
+
+</section>
+
+<!-- Message de vœux principal -->
+
+<section class="message-section" id="messageSection">
+
+<div class="message-card">
+
+<div class="message-content">
+
+<p class="typed-message" id="typedMessage"></p>
+
+<span class="typing-cursor" id="typingCursor">|</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Trois cases interactives -->
+
+<section class="interactive-section" id="interactiveSection">
+
+<div class="boxes-grid">
+
+
+<!-- Case Santé & Bonheur -->
+
+<div class="interactive-box health-box" data-type="health">
+
+<div class="box-icon">
+
+<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+
+</svg>
+
+</div>
+
+<h3 class="box-title">Santé & Bonheur</h3>
+
+<p class="box-description">Que la santé t'accompagne toujours et que le bonheur illumine chaque jour de cette nouvelle année !</p>
+
+</div>
+
+<!-- Case Réussite & Succès -->
+
+<div class="interactive-box success-box" data-type="success">
+
+<div class="box-icon">
+
+<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+
+<line x1="8" y1="21" x2="16" y2="21"/>
+
+<line x1="12" y1="17" x2="12" y2="21"/>
+
+</svg>
+
+</div>
+
+<h3 class="box-title">Réussite & Succès</h3>
+
+<p class="box-description">Que tous tes projets se réalisent et que le succès couronne tes efforts dans tous les domaines !</p>
+
+</div>
+
+<!-- Case Amour & Amitiés -->
+
+<div class="interactive-box love-box" data-type="love">
+
+<div class="box-icon">
+
+<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+
+<circle cx="9" cy="7" r="4"/>
+
+<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+
+<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+
+</svg>
+
+</div>
+
+<h3 class="box-title">Amour & Amitiés</h3>
+
+<p class="box-description">Que l'amour de ta famille et de tes amis te réchauffent le cœur aujourd'hui et pour toujours !</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Bouton Rejouer la fête -->
+
+<section class="replay-section" id="replaySection">
+
+<button class="replay-button" id="replayButton">
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<polyline points="1 4 1 10 7 10"/>
+
+<path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+
+</svg>
+
+Rejouer la fête 🎉
+
+</button>
+
+</section>
+
+</main>
+
+
+<!-- Éléments audio (structure prête pour l'ajout de fichiers) -->
+
+<audio id="explosionSound" preload="auto">
+
+<source src="sounds/explosion.mp3" type="audio/mpeg">
+
+<source src="sounds/explosion.wav" type="audio/wav">
+
+</audio>
+
+
+<audio id="backgroundMusic" preload="auto" loop>
+
+<source src="sounds/Happy.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- Sons thématiques pour les cases -->
+
+<audio id="healthSound" preload="auto">
+
+<source src="sounds/Song1.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="successSound" preload="auto">
+
+<source src="sounds/Song3.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="loveSound" preload="auto">
+
+<source src="sounds/Song2.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="script-new.js"></script>
+
+</body>
+
+</html>
